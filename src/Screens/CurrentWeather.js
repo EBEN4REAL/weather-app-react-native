@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   bodyWrapper: {
     justifyContent: 'flex-end',
     alignItems: 'flex-start',
-    padding: 10,
+    padding: 20,
   },
   description: {
     fontSize: 48,
