@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import CurrentWeather from './src/Screens/CurrentWeather';
+import { View, StyleSheet } from 'react-native';
+import UpcomingWeather from './src/Screens/UpcomigWeather';
+import City from './src/Screens/City';
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {/* <City /> */}
+      <CurrentWeather />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
+
+export default App;
